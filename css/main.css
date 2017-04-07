@@ -1,0 +1,235 @@
+/* Reset default properties
+-------------------- */
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    background-color: #444444;
+}
+main {
+    padding-top: 59px;
+}
+/* Responsive gird
+-------------------- */
+@media screen and (max-width : 760px) {
+    [class*="col-"] {
+        width: 100% !important;
+    }
+    pre {
+        margin: 1em !important;
+    }
+}
+.row:after {
+    content: "";
+    clear: both;
+    display: block;
+}
+.col-half {width: 50%;}
+.col-full {width: 100%;}
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+}
+/* Public elements
+-------------------- */
+/* mobile style */
+@media screen and (max-width : 760px) {
+    #logo {
+        width: 100%;
+        text-align: center;
+    }
+    #menu {
+        display: none;
+    }
+    .container, .profile-block-content {
+        padding: 15px !important;
+    }
+    .profile-block {
+        margin: 0 !important;
+        height: auto !important;
+        padding: 0 0 30px !important;
+        border-radius: 0 !important;
+    }
+}
+/* wrappers */
+.container, .logo-container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0;
+}
+.profile-block-content {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    transform: translate(0, -50px);
+}
+.container:after, .profile-block-content:after {
+    content: "";
+    clear: both;
+    display: block;
+}
+/* pseudo-method */
+.profile {
+    z-index: 9;
+    text-align: center;
+}
+.profile img {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    border: 5px solid white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+}
+.center {
+    margin: 0 auto;
+}
+/* element */
+.fixedTopNav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    height: auto;
+    width: 100%;
+    font-family: Sarpanch, sans-serif;
+    font-size: 24px;
+}
+.title {
+    height: auto;
+    padding: 20px 0;
+    text-align: center;
+    margin-bottom: 70px;
+}
+.title-no-offset {
+    height: auto;
+    padding: 90px 0 20px;
+    text-align: center;
+    margin-bottom: 70px;
+}
+.title > div {
+    transform: translate(0, 70px);
+}
+.profile-block {
+    max-width: 650px;
+    margin: 0 auto 70px;
+    height: auto;
+    padding: 0;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.teammate-card {
+    width: 250px;
+    height: 340px;
+    display: inline-block;
+    border-radius: 4px;
+    border: 2px solid #008db1;
+    margin: 20px 10px;
+    padding: 16px;
+}
+.teammate-card:first-child {
+    transform: translateY(-22px);
+}
+.teammate-info {
+    text-align: center;
+}
+/* Site-specific style
+-------------------- */
+#logo {
+    float: left;
+    font-size: 24px;
+    margin: 13px 0;
+}
+#menu {
+    text-align: right;
+    float: right;
+}
+#menu ul {
+    padding: 0;
+    margin: 13px 0;
+}
+#menu ul li {
+    display: inline;
+}
+#menu ul li a {
+    padding: 5px 10px;
+}
+#menu ul li a.active {
+    color: rgba(255,255,255,0.7);
+}
+#menu ul li:hover > .dropdown-menu {
+    display: inline-block;
+}
+.dropdown-menu {
+    font-size: 20px;
+    display: none;
+}
+.dropdown-menu ul {
+    margin: 0 !important; /* Forgive me, just this once */
+}
+#jumbotron {
+    height: 500px;
+    align-items: center;
+    display: flex;
+}
+#jumbotron div {
+    margin: 0 auto;
+    width: 600px;
+    text-align: center;
+}
+#jumbotron p {
+    font-size: 26px;
+}
+footer {
+    padding: 50px 0;
+}
+#copyright {
+    margin: 0 auto;
+    text-align: center;
+}
+#validation {
+    font-size: 18px;
+    color: white;
+    font-family: monospace;
+}
+/* Typography
+-------------------- */
+a {
+    color: white;
+    text-decoration: none;
+    text-decoration-color: white;
+}
+.profile-block a:hover, .teammate-info a:hover {
+    text-decoration: underline;
+}
+p {
+    color: white;
+    font-size: 18px;
+    font-family: 'Actor', sans-serif;
+}
+h1 {
+    color: white;
+    font-size: 30px;
+    font-family: 'Abel', sans-serif;
+}
+h2 {
+    color: white;
+    font-size: 18px;
+    font-family: 'Sarpanch', sans-serif;
+}
+h3 {
+    color: white;
+    font-size: 26px;
+    font-family: 'Abel', sans-serif;
+}
+.container > ul li, .block-content ul li, ol li {
+    color: white;
+    font-size: 18px;
+    font-family: 'Actor', sans-serif;
+}
+pre {
+    margin: 1em 2em;
+    font-size: 16px;
+    overflow: auto;
+    font-family: 'Source Code Pro';
+}

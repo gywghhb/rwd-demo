@@ -1,0 +1,30 @@
+/* code block */
+.code {
+    max-width: 650px;
+    border-radius: 10px;
+    margin: 0 auto;
+    border: 2px solid #629c44; /* replace with your theme colour */
+    color: #629c44; /* Same here */
+    overflow: auto;
+}
+.code-segment {
+    color: #629c44;
+    font-family: 'Source Code Pro';
+}
+/* image block */
+.img {
+    margin: 0 auto;
+    padding: 15px;
+    max-width: 100%;
+    text-align: center;
+}
+.overflow-indicator {
+    text-align: center;
+    color: #d68227;
+    display: none;
+}
+@media screen and (max-width : 760px) {
+    .overflow-indicator {
+        display: block;
+    }
+}

@@ -1,0 +1,22 @@
+.block-picture  img {
+    width: 100% !important;
+    height: auto;
+}
+.block-content ul, .block-content ol {
+    text-decoration-color: white;
+}
+.row {
+    padding: 50px 0;
+}
+.row > div {
+    align-items: center !important;
+}
+.row:nth-child(even) {
+    background: rgba(61,12,30,0.4); /* Replace with your theme colour */
+    /* Use this website to convert hex to RGB: http://www.rgbtohex.net/hextorgb/ */
+}
+@media screen and (max-width : 760px) {
+    .row {
+        padding: 0 !important;
+    }
+}

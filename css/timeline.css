@@ -1,0 +1,19 @@
+table {
+    margin: 0 auto;
+    color: white;
+    font-size: 18px;
+    font-family: 'Actor', sans-serif;
+    border-collapse: collapse;
+}
+tr:first-child {
+    font-weight: bold;
+}
+tr:nth-child(even) {
+    background: rgba(0, 141, 177, 0.4);
+}
+tr p {
+    margin-top: 0;
+}
+td {
+    vertical-align: top;
+}

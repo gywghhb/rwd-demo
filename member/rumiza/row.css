@@ -1,0 +1,19 @@
+.block-picture  img {
+    width: 100%;
+    height: auto;
+}
+.row {
+    padding: 50px 0;
+}
+.row > div {
+    align-items: center !important;
+}
+.row:nth-child(even) {
+    background: rgba(142,69,133,0.4); /* Replace with your theme colour */
+    /* Use this website to convert hex to RGB: http://www.rgbtohex.net/hextorgb/ */
+}
+@media screen and (max-width : 760px) {
+    .row {
+        padding: 0 !important;
+    }
+}

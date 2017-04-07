@@ -1,0 +1,118 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Team Crispy | How to Add Video to a Website in HTML5 and Non-HTML5 Ways</title>
+    <!-- External CSS -->
+    <link rel="stylesheet" type="text/css" href="../css/main.css">
+    <link rel="stylesheet" type="text/css" href="../css/theme.css">
+    <link rel="stylesheet" type="text/css" href="dinesh/component.css">
+    <!-- Custom fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Sarpanch:500' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Actor' rel='stylesheet' type='text/css'>
+    <!-- meta information -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Chrome custom tab colour -->
+    <meta name="theme-color" content="#629c44">
+    <!-- Use this to convert code to HTML compatible: http://www.textfixer.com/html/html-character-encoding.php -->
+</head>
+<body>
+<header>
+    <nav class="fixedTopNav dinesh">
+        <div class="logo-container">
+            <div id="logo">
+                <a href="../index.html">Team Crispy</a>
+            </div>
+            <div id="menu">
+                <ul>
+                    <li><a href="../timeline.html">Timeline</a></li>
+                    <li>
+                        <a href="../index.html">Teammate</a>
+                        <div class="dropdown-menu">
+                            <ul>
+                                <li><a href="../member/daniel.html">Daniel</a></li>
+                                <li><a href="../member/dinesh.html" class="active">Dinesh</a></li>
+                                <li><a href="../member/nazif.html">Nazif</a></li>
+                                <li><a href="../member/rumiza.html">Rumiza</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+<main>
+    <div class="title dinesh">
+        <div>
+            <div class="container">
+                <h1>How to Add Video to Web Pages</h1>
+            </div>
+            <div class="profile-card">
+                <p>Dinesh Sarweswaran</p>
+                <p>27/03/2016</p>
+                <div class="profile"><img src="../img/profile/dinesh.jpg" alt="profile"></div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <p>With the introduction of HTML 5 in October 2014, adding videos to websites has become a much simpler task. In prior versions, adding videos to websites consisted of running a middleware, the most famous being Adobe Flash. With Adobe Flash being a plug-in, it was known to slow down browsers and required constant updates to keep it running optimally. HTML 5 revolutionized websites, making them easier to create and view across many different devices. HTML 5 made adding videos to websites very simple.</p>
+        <div class="container">
+            <div class="img">
+                <img src="../img/dinesh/1.jpg" alt="1">
+            </div>
+        </div>
+        <h3>Adding Video to a Website with HTML5</h3>
+        <p>To add a video to your website through HTML 5, simply use the video tag, <span class="code-segment">&lt;video&gt;</span>, an example is provided below.</p>
+		<div class="code">
+			<pre>&lt;video width=&quot;320&quot controls&gt; <br>&lt;source src=&quot;movie.mp4&quot; type=&quot;video/mp4&quot;&gt;<br>&lt;source src=&quot;movie.ogg&quot; type=&quot;video/ogg&quot;&gt;<br>Your browser does not support the video tag.<br>&lt;/video&gt;
+			<div class="overflow-indicator"><p>You might want to scroll right.</p></div>
+		</div>
+        <ul>
+            <li>Video tag defines a video or a movie</li>
+            <li>Width and height are attributes of the video player</li>
+            <li>Controls are another attribute of the video player, allowing the user to play/pause, change volume, full-screen the video, etc.</li>
+            <li>Source provides the video to the website, and the type allows for different file extensions, allowing the video to play over different browsers.</li>
+        </ul>
+        <p>The text will display if the browser is incompatible with the video formats.</p>
+        <p>Another way to add video to your website through HTML 5 is the object tag, <span class="code-segment">&lt;object&gt;</span>, an example is provided below.</p>
+        <div class="container">
+            <div class="code">
+                <pre>&lt;object width=&quot;400&quot; height=&quot;400&quot; data=&quot;helloworld.swf&quot;&gt;&lt;/object&gt;</pre>
+                <div class="overflow-indicator"><p>You might want to scroll right.</p></div>
+            </div>
+        </div>
+        <ol>
+            <li>Object tag defines a multimedia file</li>
+            <li>Width and height are attributes of the file</li>
+            <li>Data is the media file you want to present</li>
+        </ol>
+        <p>Some video formats are not compatible on browsers for example WebM and Ogg and will require other formats for your video to display. The object tag provides another layer of compatibility to your website.</p>
+        <h3>Adding a Video to a Website Non HTML5</h3>
+        <p>Adding a video to your website without using HTML 5 Tags would be to embed them through other video sharing sites like YouTube. An example of the code is provided below.</p>
+        <div class="container">
+            <div class="code">
+                <pre>&lt;iframe width=&quot;560&quot; height=&quot;315&quot;src=&quot;https://www.youtube.com/embed/9bZkp7q19f0&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;</pre>
+                <div class="overflow-indicator"><p>You might want to scroll right.</p></div>
+            </div>
+        </div>
+        <div class="img">
+            <img src="../img/dinesh/2.png" alt="2">
+        </div>
+        <p>You can control which options you would like to feature in your video that is embedded in your website through the source YouTube link.</p>
+    </div>
+</main>
+<footer class="dinesh">
+    <div class="container">
+        <div id="copyright">
+            <p>&copy; 2016 Fenghao Guo</p>
+            <div id="validation">
+                <script src=http://my.gblearn.com/js/loadscript.js></script>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
